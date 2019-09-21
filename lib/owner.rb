@@ -23,7 +23,7 @@ class Owner
   end
 
   def buy_cat(cat_name)
-    if cat = Cat.all.detect {|cat| cat.name == cat_name }
+    if cat = Cat.all.find {|cat| cat.name == cat_name }
       cat.owner = self
       self.cats
     end
