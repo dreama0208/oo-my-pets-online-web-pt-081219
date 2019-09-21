@@ -27,7 +27,6 @@ class Owner
       cat.owner = self
     end
     self.cats << cat
-
   end
 
   def feed_cats
