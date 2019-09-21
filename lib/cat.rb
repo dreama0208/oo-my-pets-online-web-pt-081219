@@ -4,9 +4,9 @@ class Cat
   attr_accessor :owner, :mood
   @@all = []
 
-  def initialize(name, Owner)
+  def initialize(name, owner)
     @name = name
-    @owner = Owner
+    @owner = owner
     @mood = "nervous"
     @@all << self
   end
