@@ -1,7 +1,7 @@
 class Cat
   # code goes here
-  attr_accessor :name, :owner
-  attr_writer :mood
+  attr_reader :name
+  attr_accessor :owner, :mood
   @@all = []
 
   def initialize(name, owner, mood = "nervous")
