@@ -11,7 +11,7 @@ class Owner
   end
 
   def say_species
-    print "I am a human."
+    "I am a human."
   end
 
   def cat
