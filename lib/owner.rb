@@ -29,6 +29,13 @@ class Owner
     end
   end
 
+  def buy_dog(dog_name)
+    if dog = Dog.all.find {|dog| dog.name == cag_name }
+      dog.owner = self
+      self.dogs
+    end
+  end
+
   def feed_cats
     self.cat.each {|cat| cat.mood = "happy"}
   end
