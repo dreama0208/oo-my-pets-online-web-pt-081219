@@ -30,7 +30,7 @@ class Owner
   end
 
   def buy_dog(dog_name)
-    if dog = Dog.all.find {|dog| dog.name == cag_name }
+    if dog = Dog.all.find {|dog| dog.name == dog_name }
       dog.owner = self
       self.dogs
     end
