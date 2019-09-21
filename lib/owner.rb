@@ -26,6 +26,7 @@ class Owner
     if cat = Cat.all.detect {|cat| cat.name == cat_name }
       cat.owner = self
     end
+
   end
 
   def feed_cats
