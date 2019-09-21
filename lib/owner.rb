@@ -24,7 +24,8 @@ class Owner
 
   def buy_cat(cat_name)
     if cat = Cat.all.detect {|cat| cat.name == cat_name }
-      self.cats << cat
+      cat.owner = self
+      self.cats
     end
   end
 
